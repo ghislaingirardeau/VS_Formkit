@@ -6,6 +6,7 @@ const formData = ref({
   address: '',
 });
 async function handleSubmit(data) {
+  // wait est la function créer dans le dossier utils, parce qu'elle est dans ce dossier, pas besoin de faire un import !
   await wait(3000);
   console.log(data);
 }
