@@ -10,7 +10,7 @@ const config: DefaultConfigOptions = {
         /* utiliser en fonction permet de recupérer des params, notamment ce que vient de saisir l'utilisateur */
         /* le nom de la méthode doit MATCHER avec le nom de la rule !!! */
         username_is_unique({ args, name, node }) {
-          console.log(name);
+          console.log(node);
           return `${name} with value ${node.value} is already taken`;
         },
       },
