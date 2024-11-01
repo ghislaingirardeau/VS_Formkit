@@ -42,6 +42,7 @@ async function handleSubmit(data) {
         name="email" />
       <FormKit
         type="password"
+        validation="length: 2"
         label="Password"
         name="password" />
       <FormKit
